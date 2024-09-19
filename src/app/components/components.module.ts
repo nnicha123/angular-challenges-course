@@ -7,8 +7,6 @@ import { ComponentDocumentationComponent } from './component-documentation/compo
 import { AccordinComponent } from './accordin/accordion.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { StarRatingsComponent } from './star-ratings/star-ratings.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { LoaderComponent } from './loader/loader.component';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
