@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { CardComponent } from './components/card/card.component';
-import { AccordinComponent } from './components/accordin/accordion.component';
+import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
+import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './app.routes';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent,
-    AccordinComponent
+    TopOfPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    SharedModule,
+    RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

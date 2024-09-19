@@ -1,0 +1,27 @@
+<app-banner-cut-out [title]="'Pipes'" [imageUrl]="'back-4.jpg'"></app-banner-cut-out>
+<hr>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Formatter'" [subTitle]="'Pipes'">
+    <div body>
+        <p>{{'1111222233334444' | creditCardFormatter}}</p>
+        <p>{{'1111111111111111111111' | creditCardFormatter}}</p>
+        <p>{{'a111222233334444' | creditCardFormatter}}</p>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Truncate'" [subTitle]="'Pipes'">
+    <p body>
+        {{'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.' | truncate : 75}}
+    </p>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Sort By Key'" [subTitle]="'Pipes'">
+    <div body>
+        <h5>String Ascending</h5>
+        <!-- <p *ngFor="let obj of objectArray | sortByKey: 'content'">{{obj.content}}</p> -->
+    </div>
+</app-card>

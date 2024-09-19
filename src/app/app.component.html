@@ -1,21 +1,15 @@
 <app-toolbar [title]="'100 Angular Challenge'">
     <ul>
-        <li>Components</li>
-        <li>Directives</li>
-        <li>Services</li>
-        <li>Pipes</li>
+        <li routerLink="components">Components</li>
+        <li routerLink="directives">Directives</li>
+        <li routerLink="services">Services</li>
+        <li routerLink="pipes">Pipes</li>
         <li>Other</li>
     </ul>
 </app-toolbar>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Accodion'"
-[subTitle]="'Components'">
-    <app-accordion body [items]="accordionItems"></app-accordion>
-</app-card>
+<main>
+    <router-outlet></router-outlet>
+</main>
 
-
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Card'"
-[subTitle]="'Components'">
-    <p body>Body Content</p>
-    <p footer>Footer Content</p>
-</app-card>
+<app-top-of-page></app-top-of-page>
