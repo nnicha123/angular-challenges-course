@@ -23,4 +23,9 @@ export class ComponentDocumentationComponent {
 
   progressValue: number = 25;
   loaderType: LoaderType = LoaderType.Loading;
+  toggleValue: boolean = false;
+
+  debounceExampleMethod(value:string):void {
+    console.log('Component Documentation', value)
+  }
 }

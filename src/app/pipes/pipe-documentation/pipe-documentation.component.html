@@ -1,6 +1,24 @@
 <app-banner-cut-out [title]="'Pipes'" [imageUrl]="'back-4.jpg'"></app-banner-cut-out>
 <hr>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Filter Term'" [subTitle]="'Pipes'">
+    <div body>
+        {{ ['Hello', 'World', 'Hello World'] | filterTerm : 'World' }}
+    </div>
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten'" [subTitle]="'Pipes'">
+    <div body>
+        {{flattenData | flatten }}
+    </div>
+    <div class="footer" footer>
+        <button (click)="modifyFlatten()">Modify</button>
+        <button (click)="reassignFlatten()">Reassign</button>
+    </div>
+</app-card>
+
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Formatter'" [subTitle]="'Pipes'">
     <div body>
         <p>{{'1111222233334444' | creditCardFormatter}}</p>

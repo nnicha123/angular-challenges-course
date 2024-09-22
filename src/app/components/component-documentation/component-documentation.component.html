@@ -1,6 +1,58 @@
 <h1>Components</h1>
 <hr>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce Search'"
+[subTitle]="'Components'">
+    <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Rich Text Viewer'"
+[subTitle]="'Components'">
+    <div body>
+        <div>
+            <h3>Good Example</h3>
+            <app-rich-text-viewer [htmlText]="'<p>Hello World</p>'"></app-rich-text-viewer>
+            <h3>Exampty Example</h3>
+            <app-rich-text-viewer [htmlText]="'   '"></app-rich-text-viewer>
+            <h3>Bad Example</h3>
+            <app-rich-text-viewer [htmlText]="'<p>Hello World'"></app-rich-text-viewer>
+        </div>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'"
+[subTitle]="'Components'">
+    <app-toggle body [isOn]="toggleValue"></app-toggle>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'"
+[subTitle]="'Components'">
+    <app-quote body [quote]="'Get Good, Get Great, Get Better.'"
+    [author]="'Dylan C. Israel'" [occupation]="'Software Engineer, Mentor & Educator'"></app-quote>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Modal'"
+[subTitle]="'Components'">
+    <div body>
+        <app-modal [title]="'Modal Example'" #modal>
+            <p>Some content</p>
+        </app-modal>
+    </div>
+    <div footer>
+        <button (click)="modal.open()">Call Modal</button>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'LinkedIn Post'"
+[subTitle]="'Components'">
+    <app-linkedin-post body></app-linkedin-post>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'"
+[subTitle]="'Components'">
+    <app-twitter-post body></app-twitter-post>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Input'"
 [subTitle]="'Components'">
 <div body>
@@ -11,7 +63,7 @@
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'"
 [subTitle]="'Components'">
-    <app-loader body [isLoading]="true" [loaderType]="loaderType"></app-loader>
+    <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Top of Page'"

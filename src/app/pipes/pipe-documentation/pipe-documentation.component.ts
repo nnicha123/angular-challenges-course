@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './pipe-documentation.component.scss'
 })
 export class PipeDocumentationComponent {
-  objectArray:any[] = []
+  flattenData = [1, 2, [3], [4, [5, 6, [7]]]];
+  objectArray: any[] = [];
+
+  modifyFlatten(): void {
+    this.flattenData.push(3, 5);
+  }
+
+  reassignFlatten(): void {
+    this.flattenData = [...this.flattenData];
+  }
 }

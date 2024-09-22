@@ -10,6 +10,13 @@ import { StarRatingsComponent } from './star-ratings/star-ratings.component';
 import { LoaderComponent } from './loader/loader.component';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
+import { ModalComponent } from './modal/modal.component';
+import { QuoteComponent } from './quote/quote.component';
+import { ToggleComponent } from './toggle/toggle.component';
+import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
+import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 
 
 
@@ -21,6 +28,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     StarRatingsComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
+    LinkedinPostComponent,
+    ModalComponent,
+    QuoteComponent,
+    ToggleComponent,
+    RichTextViewerComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     SharedModule,
