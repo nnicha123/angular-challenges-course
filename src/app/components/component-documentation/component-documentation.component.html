@@ -1,13 +1,15 @@
 <h1>Components</h1>
 <hr>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce Search'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Search List'" [subTitle]="'Components'">
+    <app-search-list body [items]="['United States','Mexico','United Arab Emirates']"></app-search-list>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce Search'" [subTitle]="'Components'">
     <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Rich Text Viewer'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Rich Text Viewer'" [subTitle]="'Components'">
     <div body>
         <div>
             <h3>Good Example</h3>
@@ -20,19 +22,16 @@
     </div>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subTitle]="'Components'">
     <app-toggle body [isOn]="toggleValue"></app-toggle>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'"
-[subTitle]="'Components'">
-    <app-quote body [quote]="'Get Good, Get Great, Get Better.'"
-    [author]="'Dylan C. Israel'" [occupation]="'Software Engineer, Mentor & Educator'"></app-quote>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'Components'">
+    <app-quote body [quote]="'Get Good, Get Great, Get Better.'" [author]="'Dylan C. Israel'"
+        [occupation]="'Software Engineer, Mentor & Educator'"></app-quote>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Modal'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Modal'" [subTitle]="'Components'">
     <div body>
         <app-modal [title]="'Modal Example'" #modal>
             <p>Some content</p>
@@ -43,53 +42,44 @@
     </div>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'LinkedIn Post'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'LinkedIn Post'" [subTitle]="'Components'">
     <app-linkedin-post body></app-linkedin-post>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'" [subTitle]="'Components'">
     <app-twitter-post body></app-twitter-post>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Input'"
-[subTitle]="'Components'">
-<div body>
-    <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadOnly]="false"></app-credit-card-input>
-    <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadOnly]="true"></app-credit-card-input>
-</div>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Input'" [subTitle]="'Components'">
+    <div body>
+        <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadOnly]="false"></app-credit-card-input>
+        <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadOnly]="true"></app-credit-card-input>
+    </div>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'" [subTitle]="'Components'">
     <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Top of Page'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Top of Page'" [subTitle]="'Components'">
     <p body>Scroll 400px down the page to render.</p>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star Ratings'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Star Ratings'" [subTitle]="'Components'">
     <app-star-ratings body [rating]="2.5"></app-star-ratings>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Progress Bar'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Progress Bar'" [subTitle]="'Components'">
     <app-progressbar body [value]="progressValue"></app-progressbar>
     <button footer (click)="progressValue = 75;">Update</button>
 </app-card>
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Accodion'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Accodion'" [subTitle]="'Components'">
     <app-accordion body [items]="accordionItems"></app-accordion>
 </app-card>
 
 
-<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Card'"
-[subTitle]="'Components'">
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Card'" [subTitle]="'Components'">
     <p body>Body Content</p>
     <p footer>Footer Content</p>
 </app-card>
