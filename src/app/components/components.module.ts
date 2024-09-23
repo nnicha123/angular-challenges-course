@@ -18,6 +18,9 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 import { SearchListComponent } from './search-list/search-list.component';
+import { CounterInputComponent } from './counter-input/counter-input.component';
+import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { PagingComponent } from './paging/paging.component';
 
 
 
@@ -37,6 +40,9 @@ import { SearchListComponent } from './search-list/search-list.component';
     RichTextViewerComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterInputComponent,
+    SimpleTableComponent,
+    PagingComponent,
   ],
   imports: [
     SharedModule,
