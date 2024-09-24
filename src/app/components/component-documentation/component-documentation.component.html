@@ -1,6 +1,21 @@
 <h1>Components</h1>
 <hr>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Email Form'" [subTitle]="'Components'">
+    <app-email-form body></app-email-form>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Sort Table'" [subTitle]="'Components'">
+    <app-sort-table body></app-sort-table>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Tabs'" [subTitle]="'Components'">
+    <app-tab body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">
+        <app-paging *ngIf="selectedTab == 0" [totalItems]="200"></app-paging>
+        <app-counter-input *ngIf="selectedTab == 1"></app-counter-input>
+    </app-tab>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Paging'" [subTitle]="'Components'">
     <app-paging body></app-paging>
 </app-card>

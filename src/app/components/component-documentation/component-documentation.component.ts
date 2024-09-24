@@ -21,6 +21,13 @@ export class ComponentDocumentationComponent {
     },
   ]
 
+  tabs: {title:string, active:boolean}[] = [
+    {title:'Tab 1', active: true},
+    {title:'Tab 2', active: false}
+  ]
+
+  selectedTab = 0;
+
   progressValue: number = 25;
   loaderType: LoaderType = LoaderType.Loading;
   toggleValue: boolean = false;

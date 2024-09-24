@@ -21,6 +21,9 @@ import { SearchListComponent } from './search-list/search-list.component';
 import { CounterInputComponent } from './counter-input/counter-input.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
+import { TabComponent } from './tab/tab.component';
+import { SortTableComponent } from './sort-table/sort-table.component';
+import { EmailFormComponent } from './email-form/email-form.component';
 
 
 
@@ -43,6 +46,9 @@ import { PagingComponent } from './paging/paging.component';
     CounterInputComponent,
     SimpleTableComponent,
     PagingComponent,
+    TabComponent,
+    SortTableComponent,
+    EmailFormComponent,
   ],
   imports: [
     SharedModule,

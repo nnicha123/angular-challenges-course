@@ -1,0 +1,25 @@
+<h1>Other - Guards, Animations & More</h1>
+<hr>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Form Dirty Guard'"
+[subTitle]="'Other - Guard'">
+    <div body>
+        <form [formGroup]="form" (ngSubmit)="submitForm()">
+            <div class="name" >
+                <input type="text" formControlName="name" placeholder="Your Name">
+            </div>
+            <button [disabled]="form.invalid">Submit</button>
+        </form>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Fade In Out'"
+[subTitle]="'Other - Animation'">
+    <div body>
+        <h2 *ngIf="isInDOM" [@fadeInOutAnimation]>Hello</h2>
+        <h2 *ngIf="!isInDOM" [@fadeInOutAnimation]>World</h2>
+    </div>
+    <div footer>
+        <button (click)="isInDOM = !isInDOM">Toggle Animation</button>
+    </div>
+</app-card>
