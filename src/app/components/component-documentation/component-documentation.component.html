@@ -1,6 +1,21 @@
 <h1>Components</h1>
 <hr>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Simple Popup'" [subTitle]="'Components'">
+    <div body>
+        <app-simple-popup [message]="'Simple Popup Component'">
+            <h1>Hello World</h1>
+        </app-simple-popup>
+    </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Snack Bar'" [subTitle]="'Components'">
+    <div body>
+        <app-snack-bar [message]="'Snackbar Example'"></app-snack-bar>
+        <button (click)="snackbarShow()">Show Snackbar</button>
+    </div>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Banner Cut Out'" [subTitle]="'Components'">
     <app-banner-cutout body></app-banner-cutout>
 </app-card>
