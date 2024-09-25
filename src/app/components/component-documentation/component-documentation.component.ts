@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordin/accodion-item.interface';
 import { LoaderType } from '../loader/loader-type.enum';
+import { RibbonType } from '../ribbon/ribbon-type.enum';
+import { RibbonLocation } from '../ribbon/ribbon-location.enum';
+import { ButtonMeta } from '../button-toggle/button-meta.model';
 
 @Component({
   selector: 'app-component-documentation',
@@ -21,9 +24,9 @@ export class ComponentDocumentationComponent {
     },
   ]
 
-  tabs: {title:string, active:boolean}[] = [
-    {title:'Tab 1', active: true},
-    {title:'Tab 2', active: false}
+  tabs: { title: string, active: boolean }[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false }
   ]
 
   selectedTab = 0;
@@ -32,7 +35,18 @@ export class ComponentDocumentationComponent {
   loaderType: LoaderType = LoaderType.Loading;
   toggleValue: boolean = false;
 
-  debounceExampleMethod(value:string):void {
+  RibbonType = RibbonType;
+  RibbonLocation = RibbonLocation;
+  ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.TopRight }
+
+  buttonToggleOptions:ButtonMeta[] = [
+    new ButtonMeta({id:1, title:'Bold'}),
+    new ButtonMeta({id:2, title:'Italic'}),
+    new ButtonMeta({id:3, title:'Underline'})
+  ]
+
+  debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value)
   }
+
 }

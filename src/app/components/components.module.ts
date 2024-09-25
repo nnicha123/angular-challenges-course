@@ -24,6 +24,9 @@ import { PagingComponent } from './paging/paging.component';
 import { TabComponent } from './tab/tab.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
+import { RibbonComponent } from './ribbon/ribbon.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { BannerCutoutComponent } from './banner-cutout/banner-cutout.component';
 
 
 
@@ -49,6 +52,9 @@ import { EmailFormComponent } from './email-form/email-form.component';
     TabComponent,
     SortTableComponent,
     EmailFormComponent,
+    RibbonComponent,
+    ButtonToggleComponent,
+    BannerCutoutComponent,
   ],
   imports: [
     SharedModule,
