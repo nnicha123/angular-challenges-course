@@ -15,7 +15,8 @@
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Snack Bar'" [subTitle]="'Components'">
     <div body>
-        <app-snack-bar [message]="'Snackbar Example'"></app-snack-bar>
+        <!--  No need to refer here because app-snack-bar in app.component.html -->
+        <!-- <app-snack-bar [message]="'Snackbar Example'"></app-snack-bar> -->
         <button (click)="snackbarShow()">Show Snackbar</button>
     </div>
 </app-card>

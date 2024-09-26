@@ -4,7 +4,8 @@ import { LoaderType } from '../loader/loader-type.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
-import { SnackBarComponent } from '../snack-bar/snack-bar.component';
+import { SnackbarService } from '../../services/snackbar/snackbar.service';
+// import { SnackBarComponent } from '../snack-bar/snack-bar.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -40,7 +41,7 @@ export class ComponentDocumentationComponent {
   RibbonLocation = RibbonLocation;
   ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.TopRight }
 
-  @ViewChild(SnackBarComponent) public snackBar!: SnackBarComponent;
+  // @ViewChild(SnackBarComponent) public snackBar!: SnackBarComponent;
 
   buttonToggleOptions: ButtonMeta[] = [
     new ButtonMeta({ id: 1, title: 'Bold' }),
@@ -48,9 +49,15 @@ export class ComponentDocumentationComponent {
     new ButtonMeta({ id: 3, title: 'Underline' })
   ]
 
-  snackbarShow(): void {
-    this.snackBar.showMessage('Snackbar Example');
+  // Switch to use service instead
+  // snackbarShow(): void {
+  //   this.snackBar.showMessage('Snackbar Example');
+  // }
+  snackbarShow():void{
+    this.snackbarService.callSnackbar('Snackbar Example');
   }
+
+  constructor(public snackbarService:SnackbarService){}
 
   debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value)
