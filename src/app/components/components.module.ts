@@ -27,8 +27,8 @@ import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { BannerCutoutComponent } from './banner-cutout/banner-cutout.component';
-import { SnackBarComponent } from './snack-bar/snack-bar.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 
 
@@ -57,8 +57,8 @@ import { SimplePopupComponent } from './simple-popup/simple-popup.component';
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutoutComponent,
-    SnackBarComponent,
     SimplePopupComponent,
+    CountdownTimerComponent,
   ],
   imports: [
     SharedModule,

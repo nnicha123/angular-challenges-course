@@ -50,7 +50,7 @@ export class ComponentDocumentationComponent {
   ]
 
   snackbarShow(): void {
-    this.snackBar?.show();
+    this.snackBar?.showMessage('Snackbar Example');
   }
 
   debounceExampleMethod(value: string): void {

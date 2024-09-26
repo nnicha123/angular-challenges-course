@@ -1,6 +1,10 @@
 <h1>Components</h1>
 <hr>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Count Down Timer'" [subTitle]="'Components'">
+    <app-countdown-timer body [time]="'Sep 27, 2024 16:33:44'"></app-countdown-timer>
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Simple Popup'" [subTitle]="'Components'">
     <div body>
         <app-simple-popup [message]="'Simple Popup Component'">

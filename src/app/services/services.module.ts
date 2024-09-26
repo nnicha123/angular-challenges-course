@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { UserService } from './user/user.service';
 import { ServicesDocumentationComponent } from './services-documentation/services-documentation.component';
+import { SnackbarService } from './snackbar/snackbar.service';
 
 
 
@@ -16,7 +17,7 @@ import { ServicesDocumentationComponent } from './services-documentation/service
     HttpClientModule,
     SharedModule,
     RouterModule.forChild(SERVICES_ROUTES)
-  ], 
-  providers:[UserService]
+  ],
+  providers: [UserService, SnackbarService]
 })
 export class ServicesModule { }
