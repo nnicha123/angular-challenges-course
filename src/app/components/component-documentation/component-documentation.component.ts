@@ -40,8 +40,7 @@ export class ComponentDocumentationComponent {
   RibbonLocation = RibbonLocation;
   ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.TopRight }
 
-  @ViewChild(SnackBarComponent)
-  public snackBar: SnackBarComponent | undefined;
+  @ViewChild(SnackBarComponent) public snackBar!: SnackBarComponent;
 
   buttonToggleOptions: ButtonMeta[] = [
     new ButtonMeta({ id: 1, title: 'Bold' }),
@@ -50,7 +49,7 @@ export class ComponentDocumentationComponent {
   ]
 
   snackbarShow(): void {
-    this.snackBar?.showMessage('Snackbar Example');
+    this.snackBar.showMessage('Snackbar Example');
   }
 
   debounceExampleMethod(value: string): void {

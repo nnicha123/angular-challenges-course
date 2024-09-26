@@ -18,6 +18,6 @@ import { SnackbarService } from './snackbar/snackbar.service';
     SharedModule,
     RouterModule.forChild(SERVICES_ROUTES)
   ],
-  providers: [UserService, SnackbarService]
+  providers: [UserService]
 })
 export class ServicesModule { }

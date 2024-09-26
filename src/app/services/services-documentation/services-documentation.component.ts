@@ -26,7 +26,7 @@ export class ServicesDocumentationComponent implements OnInit {
       })
   }
 
-  callSnackbar():void{
+  public callSnackbar():void{
     this.snackbarService.callSnackbar('Snackbar service example');
   }
 
